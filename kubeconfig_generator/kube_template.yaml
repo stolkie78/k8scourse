@@ -1,0 +1,102 @@
+apiVersion: v1
+clusters:
+- cluster:
+    server: https://api.ns-cls003-a.ceap.nl:6443
+  name: api-ns-cls003-a-ceap-nl:6443
+- cluster:
+    server: https://api.ns-cls003-p.ceap.nl:6443
+  name: api-ns-cls003-p-ceap-nl:6443
+- cluster:
+    server: https://api.ns-cls003-t.ceap.nl:6443
+  name: api-ns-cls003-t-ceap-nl:6443
+contexts:
+- context:
+    cluster: api-ns-cls003-a-ceap-nl:6443
+    namespace: ns-bsbm-a-ado
+    user: giedo.stolk@ns.nl/api-ns-cls003-a-ceap-nl:6443
+  name: ns-bsbm-a-ado-agent
+- context:
+    cluster: api-ns-cls003-a-ceap-nl:6443
+    namespace: ns-bsbm-a-dummy
+    user: giedo.stolk@ns.nl/api-ns-cls003-a-ceap-nl:6443
+  name: ns-bsbm-a-dummy
+- context:
+    cluster: api-ns-cls003-a-ceap-nl:6443
+    namespace: ns-bsbm-a-sso
+    user: giedo.stolk@ns.nl/api-ns-cls003-a-ceap-nl:6443
+  name: ns-bsbm-a-sso
+- context:
+    cluster: api-ns-cls003-a-ceap-nl:6443
+    namespace: ns-bsbm-a-tools
+    user: giedo.stolk@ns.nl/api-ns-cls003-a-ceap-nl:6443
+  name: ns-bsbm-a-tools
+- context:
+    cluster: api-ns-cls003-t-ceap-nl:6443
+    namespace: ns-bsbm-o-ado-agent
+    user: giedo.stolk@ns.nl/api-ns-cls003-t-ceap-nl:6443
+  name: ns-bsbm-o-ado-agent/api-ns-cls003-t-ceap-nl:6443/giedo.stolk@ns.nl
+- context:
+    cluster: api-ns-cls003-p-ceap-nl:6443
+    namespace: ns-bsbm-operator-external-secrets
+    user: giedo.stolk@ns.nl/api-ns-cls003-p-ceap-nl:6443
+  name: ns-bsbm-operator-external-secrets/api-ns-cls003-p-ceap-nl:6443/giedo.stolk@ns.nl
+current-context: ns-bsbm-o-ado-agent/api-ns-cls003-t-ceap-nl:6443/giedo.stolk@ns.nl
+kind: Config
+preferences: {}
+users:
+- name: giedo.stolk@ns.nl/api-ns-cls003-a-ceap-nl:6443
+  user:
+    token: sha256~jt2wF0RvjB3plC2GVpfOyVAQE9WzyZ1bRUcX1S_ZMAQ
+- name: giedo.stolk@ns.nl/api-ns-cls003-p-ceap-nl:6443
+  user:
+    token: sha256~XkpXu-2Me64_evKRE6umlRTA5ERc10tzoC6IK93PTqI
+- name: giedo.stolk@ns.nl/api-ns-cls003-t-ceap-nl:6443
+  user:
+    token: sha256~3SmEv9trjIS3BMHFqejjSVcId4eos81yxcErkt1Ynpk
+❯ 
+❯ cat config_vscode.yaml
+apiVersion: v1
+clusters:
+- cluster:
+    server: https://api.ns-cls003-a.ceap.nl:6443
+  name: api-ns-cls003-a-ceap-nl:6443
+- cluster:
+    server: https://api.ns-cls003-p.ceap.nl:6443
+  name: api-ns-cls003-p-ceap-nl:6443
+- cluster:
+    server: https://api.ns-cls003-t.ceap.nl:6443
+  name: api-ns-cls003-t-ceap-nl:6443
+contexts:
+- context:
+    cluster: api-ns-cls003-a-ceap-nl:6443
+    namespace: ns-bsbm-a-ado
+    user: giedo.stolk@ns.nl/api-ns-cls003-a-ceap-nl:6443
+  name: ns-bsbm-a-ado-agent
+- context:
+    cluster: api-ns-cls003-a-ceap-nl:6443
+    namespace: ns-bsbm-a-dummy
+    user: giedo.stolk@ns.nl/api-ns-cls003-a-ceap-nl:6443
+  name: ns-bsbm-a-dummy
+- context:
+    cluster: api-ns-cls003-a-ceap-nl:6443
+    namespace: ns-bsbm-a-sso
+    user: giedo.stolk@ns.nl/api-ns-cls003-a-ceap-nl:6443
+  name: ns-bsbm-a-sso
+- context:
+    cluster: api-ns-cls003-a-ceap-nl:6443
+    namespace: ns-bsbm-a-tools
+    user: giedo.stolk@ns.nl/api-ns-cls003-a-ceap-nl:6443
+  name: ns-bsbm-a-tools
+- context:
+    cluster: api-ns-cls003-t-ceap-nl:6443
+    namespace: ns-bsbm-o-ado-agent
+    user: giedo.stolk@ns.nl/api-ns-cls003-t-ceap-nl:6443
+  name: ns-bsbm-o-ado-agent/api-ns-cls003-t-ceap-nl:6443/giedo.stolk@ns.nl
+- context:
+    cluster: api-ns-cls003-p-ceap-nl:6443
+    namespace: ns-bsbm-operator-external-secrets
+    user: giedo.stolk@ns.nl/api-ns-cls003-p-ceap-nl:6443
+  name: ns-bsbm-operator-external-secrets/api-ns-cls003-p-ceap-nl:6443/giedo.stolk@ns.nl
+current-context: ns-bsbm-o-ado-agent/api-ns-cls003-t-ceap-nl:6443/giedo.stolk@ns.nl
+kind: Config
+preferences: {}

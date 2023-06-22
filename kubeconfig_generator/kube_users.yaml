@@ -1,0 +1,9 @@
+- name: giedo.stolk@ns.nl/api-ns-cls003-a-ceap-nl:6443
+  user:
+    token: sha256~jt2wF0RvjB3plC2GVpfOyVAQE9WzyZ1bRUcX1S_ZMAQ
+- name: giedo.stolk@ns.nl/api-ns-cls003-p-ceap-nl:6443
+  user:
+    token: sha256~XkpXu-2Me64_evKRE6umlRTA5ERc10tzoC6IK93PTqI
+- name: giedo.stolk@ns.nl/api-ns-cls003-t-ceap-nl:6443
+  user:
+    token: sha256~3SmEv9trjIS3BMHFqejjSVcId4eos81yxcErkt1Ynpk
